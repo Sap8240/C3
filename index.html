@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Collaborative Cell (C3)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Orbitron', sans-serif;
+            color: #0ff;
+            
+            position: relative;
+        }
+
+        #vanta-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .section, .hero {
+            background: transparent;
+            padding: 4rem 2rem;
+            color: #0ff;
+        }
+
+        .hero {
+            background: transparent;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .animated-text {
+            font-family: 'Orbitron', sans-serif;
+            color: #0ff;
+            font-size: 1.8rem;
+            margin-top: 1rem;
+            animation: fadeInSlide 2s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeInSlide {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .animated-text {
+                font-size: 1.2rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="vanta-bg"></div>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/C3 LOGO.png" alt="C3 Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#join">Join Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero" data-aos="fade-up">
+        <h1>Welcome to C3</h1>
+        <div class="animated-text">Crypto Collaborative Cell</div>
+        <a href="#contact" class="btn">Join Us</a>
+    </section>
+
+    <section id="about" class="section" data-aos="fade-up">
+        <h2>About Us</h2>
+        <p>Crypto Collaborative Cell (C3) is a student-led blockchain community focused on educating and empowering students through events, projects, and collaborative initiatives in blockchain technology.</p>
+    </section>
+
+    <section id="projects" class="section" data-aos="fade-up">
+        <h2>Our Projects</h2>
+        <div class="card-container">
+            <div class="card">Blockchain Voting System</div>
+            <div class="card">NFT Marketplace Prototype</div>
+            <div class="card">Crypto Donation Platform</div>
+        </div>
+    </section>
+
+    <section id="events" class="section" data-aos="fade-up">
+        <h2>Upcoming Events</h2>
+        <div class="card-container">
+            <div class="card">Blockchain Basics Workshop - 25 June 2025</div>
+            <div class="card">Hackathon: Crypto for Social Good - 12 July 2025</div>
+        </div>
+    </section>
+
+    <section id="team" class="section" data-aos="fade-up">
+        <h2>Meet the Team</h2>
+        <div class="card-container">
+            <div class="card">Moksh - Club Lead</div>
+            <div class="card">Anika - Events Lead</div>
+            <div class="card">Ravi - Technical Lead</div>
+        </div>
+    </section>
+
+    <section id="blog" class="section" data-aos="fade-up">
+        <h2>Blog & Resources</h2>
+        <div class="card-container">
+            <div class="card">"Understanding Blockchain Basics"</div>
+            <div class="card">"Smart Contracts 101"</div>
+            <div class="card">"Top 5 Crypto Trends 2025"</div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section" data-aos="fade-up">
+        <h2>Gallery</h2>
+        <div class="card-container">
+            <div class="card">Event Photo 1</div>
+            <div class="card">Event Photo 2</div>
+            <div class="card">Event Photo 3</div>
+        </div>
+    </section>
+
+    <section id="join" class="section" data-aos="fade-up">
+        <h2>Join Us</h2>
+        <p>Become a part of our growing blockchain community. Participate in events, contribute to projects, and build the future with us.</p>
+        <a href="#contact" class="btn">Join Now</a>
+    </section>
+
+    <section id="contact" class="section" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Crypto Collaborative Cell (C3). All rights reserved.</p>
+        <div class="socials">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+
+        VANTA.NET({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            color: 0x0ff,
+            backgroundColor: 0x000000,
+            points: 14.00,
+            maxDistance: 22.00,
+            spacing: 18.00
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for contacting us!');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
