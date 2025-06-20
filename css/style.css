@@ -7,7 +7,7 @@
 
 body {
     background-color: #000;
-    color: #0ff;
+    color: rgb(0, 153, 255);
     line-height: 1.6;
 }
 
@@ -33,7 +33,7 @@ body {
 }
 
 .navbar a {
-    color: #0ff;
+    color: rgb(0, 140, 255);
     text-decoration: none;
     text-shadow: 0 0 5px #000;
     transition: color 0.3s;
@@ -54,7 +54,7 @@ body {
 }
 
 .hero h1 {
-    color: #0ff;
+    color: rgb(0, 140, 255);
     font-size: 3rem;
     margin-bottom: 1rem;
 }
@@ -196,4 +196,24 @@ form button {
     background: rgba(0, 0, 0, 0.3);  /* just apply a dark background to text */
     padding: 1rem 2rem;
     border-radius: 10px;
+}
+.btn1{
+     display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #fff;
+    color: #000;
+    border-radius: 45px;
+    margin-top: 1rem;
+    text-decoration: none;
+    border: 4px solid #22dbbc;
+  border-radius: 50px;
+  box-shadow: 
+    0 4px 8px rgba(2, 238, 255, 0.3),
+    0 6px 20px rgba(3, 255, 242, 0.5);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+.btn1:hover {
+    transform: scale(1.05);
+    background: #22dbbc;
+    color: #000;
 }
