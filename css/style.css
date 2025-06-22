@@ -359,7 +359,68 @@
         .card:nth-child(2) { animation-delay: 0.2s; }
         .card:nth-child(3) { animation-delay: 0.3s; }
 
-        /* Responsive Styles */
+        /* Events Flex Layout */
+.events-flex {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.events-cards {
+    flex: 1 1 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.events-image {
+    flex: 1 1 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.events-image img {
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    object-fit: cover;
+    border: none;
+    border-radius: 0;
+    filter: drop-shadow(0 0 32px #00ff8877) ;
+    box-shadow: none;
+    aspect-ratio: 3/4;
+    min-height: 240px;
+    min-width: 180px;
+}
+
+/* Responsive for Events Section */
+@media (max-width: 900px) {
+    .events-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .events-image {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .events-image img {
+        max-width: 100%;
+        min-width: 0;
+        min-height: 180px;
+        aspect-ratio: 3/2;
+    }
+    .events-cards {
+        width: 100%;
+        gap: 18px;
+    }
+}
+
+/* Responsive Styles */
         @media (max-width: 1024px) {
             .container {
                 max-width: 95vw;
