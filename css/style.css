@@ -41,7 +41,7 @@
             width: 96vw;
             max-width: 700px;
             border-radius: 40px;
-            box-shadow: 0 8px 32px 0 rgba(0,255,136,0.10), 0 1.5px 8px 0 rgba(0,0,0,0.18);
+            box-shadow: 0 8px 32px 0 #00ff881a, 0 1.5px 8px 0 rgba(0,0,0,0.18);
             z-index: 1000;
             backdrop-filter: blur(16px);
             border: 1.5px solid rgba(0,255,136,0.15);
@@ -1103,4 +1103,30 @@ nav ul li a:focus {
         max-height: 3.3em;
         line-height: 1.1em;
     }
+}
+
+/* Blog Placeholder Styles */
+.blog-placeholder {
+    width: 100%;
+    height: auto; /* Decreased height for PC screens */
+    display: block; /* Changed to contain to prevent cropping */
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.3s ease; /* Add a transition for opacity */
+}
+
+@media (max-width: 1000px) {
+    .blog-placeholder {
+        height: 40; /* Smaller height for tablets/mobiles */
+    }
+}
+
+.blog-image-container picture {
+    display: block; /* Ensure picture element behaves as a block */
+}
+
+.blog-image-container {
+    width: 100%; /* Full viewport width */
+    max-width: 100%; /* Ensure it doesn't exceed viewport */
+    margin: 0;      /* Remove default margins */
 }
