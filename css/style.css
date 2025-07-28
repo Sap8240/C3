@@ -32,6 +32,7 @@
 
         /* Header/Navbar */
         .navbar {
+            
             background: rgba(20, 20, 20, 0.85);
             padding: 0;
             position: fixed;
@@ -1117,7 +1118,7 @@ nav ul li a:focus {
 
 @media (max-width: 1000px) {
     .blog-placeholder {
-        height: 40; /* Smaller height for tablets/mobiles */
+        height: 40%; /* Smaller height for tablets/mobiles */
     }
 }
 
