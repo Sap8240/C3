@@ -6,8 +6,8 @@
 
         body {
             font-family: 'Orbitron', monospace;
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
-            color: #ffffff;
+            background: #0C0C0C;
+            color: #DFD0B8;
             overflow-x: hidden;
             min-height: 100vh;
         }
@@ -27,9 +27,9 @@
             top: 20px;
             left: 50%;
             transform: translateX(-50%);
-            background: rgba(0, 0, 0, 0.8);
+            background: linear-gradient(290deg, rgba(141, 40, 236, 0.3), rgba(115, 92, 247, 0.2));
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(0, 255, 136, 0.3);
+            border: 1px solid rgba(141, 40, 236, 0.5);
             border-radius: 50px;
             padding: 10px 30px;
             display: flex;
@@ -40,13 +40,13 @@
         }
 
         .navbar:hover {
-            box-shadow: 0 0 30px rgba(0, 255, 136, 0.5);
+            box-shadow: 0 0 30px rgba(141, 40, 236, 0.4);
         }
 
         .logo {
             font-size: 24px;
             font-weight: 900;
-            background: linear-gradient(45deg, #00ff88, #00d4ff);
+            background: linear-gradient(45deg, #d1c4e9, #735cf7);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -59,7 +59,7 @@
         }
 
         .nav-links a {
-            color: #ffffff;
+            color: #d1c4e9;
             text-decoration: none;
             font-weight: 400;
             transition: all 0.3s ease;
@@ -68,8 +68,8 @@
 
         .nav-links a.active,
         .nav-links a:hover {
-            color: #00ff88;
-            text-shadow: 0 0 10px rgba(0, 255, 136, 0.8);
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(222, 212, 247, 0.7);
         }
 
         .hamburger {
@@ -82,21 +82,21 @@
         .hamburger span {
             width: 25px;
             height: 3px;
-            background: #00ff88;
+            background: #DFD0B8;
             transition: 0.3s;
         }
 
         .hero-section {
             padding: 120px 20px 80px;
             text-align: center;
-            background: radial-gradient(circle at center, rgba(0, 255, 136, 0.1), transparent);
+            background: radial-gradient(circle at center, rgba(223, 208, 184, 0.1), transparent);
         }
 
         .hero-title {
             font-size: 3.5rem;
             font-weight: 900;
-            margin-bottom: 20px;
-            background: linear-gradient(45deg, #00ff88, #00d4ff, #ff6b6b);
+            margin-bottom: 20px; 
+            background: linear-gradient(45deg, #DFD0B8, #948979);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -105,16 +105,16 @@
 
         @keyframes glow {
             from {
-                text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+                text-shadow: 0 0 20px rgba(223, 208, 184, 0.5);
             }
             to {
-                text-shadow: 0 0 30px rgba(0, 212, 255, 0.8);
+                text-shadow: 0 0 30px rgba(148, 137, 121, 0.8);
             }
         }
 
         .hero-subtitle {
-            font-size: 1.2rem;
-            color: #cccccc;
+            font-size: 1.2rem; 
+            color: #DFD0B8;
             margin-bottom: 40px;
             max-width: 600px;
             margin-left: auto;
@@ -135,8 +135,8 @@
         }
 
         .blog-card {
-            background: rgba(0, 0, 0, 0.6);
-            border: 1px solid rgba(0, 255, 136, 0.3);
+            background: rgba(57, 62, 70, 0.6);
+            border: 1px solid #393E46;
             border-radius: 15px;
             padding: 30px;
             transition: all 0.3s ease;
@@ -151,7 +151,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(45deg, rgba(0, 255, 136, 0.1), rgba(0, 212, 255, 0.1));
+            background: linear-gradient(45deg, rgba(223, 208, 184, 0.1), rgba(148, 137, 121, 0.1));
             opacity: 0;
             transition: opacity 0.3s ease;
         }
@@ -162,21 +162,21 @@
 
         .blog-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 255, 136, 0.3);
-            border-color: #00ff88;
+            box-shadow: 0 20px 40px rgba(148, 137, 121, 0.3);
+            border-color: #DFD0B8;
         }
 
         .blog-card h3 {
             font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 15px;
-            color: #00ff88;
+            color: #DFD0B8;
             position: relative;
             z-index: 1;
         }
 
         .blog-card p {
-            color: #cccccc;
+            color: #DFD0B8;
             line-height: 1.6;
             margin-bottom: 20px;
             position: relative;
@@ -189,14 +189,14 @@
             align-items: center;
             margin-bottom: 20px;
             font-size: 0.9rem;
-            color: #888;
+            color: #948979;
             position: relative;
             z-index: 1;
         }
 
         .read-more-btn {
-            background: linear-gradient(45deg, #00ff88, #00d4ff);
-            color: #000000;
+            background: linear-gradient(45deg, #DFD0B8, #948979);
+            color: #222831;
             border: none;
             padding: 12px 24px;
             border-radius: 25px;
@@ -210,18 +210,18 @@
 
         .read-more-btn:hover {
             transform: scale(1.05);
-            box-shadow: 0 0 20px rgba(0, 255, 136, 0.8);
+            box-shadow: 0 0 20px rgba(223, 208, 184, 0.8);
         }
 
         .footer {
-            background: rgba(0, 0, 0, 0.8);
+            background: #393E46;
             padding: 40px 20px;
             text-align: center;
-            border-top: 1px solid rgba(0, 255, 136, 0.3);
+            border-top: 1px solid #393E46;
         }
 
         .footer p {
-            color: #cccccc;
+            color: #DFD0B8;
             margin-bottom: 20px;
         }
 
@@ -232,15 +232,15 @@
         }
 
         .social-links a {
-            color: #00ff88;
+            color: #DFD0B8;
             text-decoration: none;
             font-weight: 700;
             transition: all 0.3s ease;
         }
 
         .social-links a:hover {
-            color: #00d4ff;
-            text-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
+            color: #948979;
+            text-shadow: 0 0 10px rgba(148, 137, 121, 0.8);
         }
 
         /* Responsive Design */
@@ -294,7 +294,7 @@
         /* Animation for background particles */
         .particle {
             position: absolute;
-            background: rgba(0, 255, 136, 0.3);
+            background: rgba(223, 208, 184, 0.3);
             border-radius: 50%;
             pointer-events: none;
             animation: float 6s ease-in-out infinite;
@@ -305,69 +305,7 @@
             50% { transform: translateY(-20px) rotate(180deg); }
         }
 
-          .navbar {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            padding: 18px 32px;
-            gap: 24px;
-        }
-
-        .logo {
-            font-size: 2rem;
-            font-family: 'Orbitron', sans-serif;
-            font-weight: 900;
-            letter-spacing: 2px;
-        }
-
-        .nav-links {
-            display: flex;
-            flex-direction: row;
-            gap: 16px;
-            margin-left: 16px;
-            padding: 0;
-            align-items: center;
-            margin-bottom: 0; /* Prevents stacking on small screens */
-        }
-
-        .nav-links li {
-            list-style: none;
-        }
-
-        .nav-links a {
-            font-size: 1.6rem;
-            padding: 8px;
-            display: flex;
-            align-items: center;
-        }
-
-        /* Responsive: keep nav horizontal and icon at side */
-        @media (max-width: 600px) {
-            .navbar {
-                flex-direction: row;
-                align-items: center ;
-                padding: 10px 12px;
-                gap: 12px;
-            }
-            .logo {
-                font-size: 1.3rem;
-                margin-bottom: 0;
-            }
-            .nav-links {
-                flex-direction: row;
-                gap: 12px;
-                margin-left: 10px;
-                width: auto;
-                justify-content: flex-start;
-                padding: 0;
-                margin-bottom: 0;
-            }
-            .nav-links a {
-                font-size: 1.4rem;
-                padding: 6px;
-            }
-        }
         .moreinfo{
     text-decoration: none;
-color: #000000;
+    color: #222831;
 }

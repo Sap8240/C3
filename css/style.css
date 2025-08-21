@@ -4,13 +4,16 @@
             box-sizing: border-box;
         }
 
+        html {
+            background-color: #0C0C0C; /* Set a base dark background for the entire page */
+        }
+
         html, body {
             margin: 0;
             padding: 0;
             height: 100%;
             font-family: 'Orbitron', sans-serif;
-            color: #00ff88;
-            background: #000;
+            color: #DFD0B8; /* Set default text color to be light and visible */
             line-height: 1.6;
         }
 
@@ -32,8 +35,7 @@
 
         /* Header/Navbar */
         .navbar {
-            
-            background: rgba(20, 20, 20, 0.85);
+            background: linear-gradient(290deg, rgba(141, 40, 236, 0.3), rgba(115, 92, 247, 0.2));
             padding: 0;
             position: fixed;
             top: 24px;
@@ -42,10 +44,10 @@
             width: 96vw;
             max-width: 700px;
             border-radius: 40px;
-            box-shadow: 0 8px 32px 0 #00ff881a, 0 1.5px 8px 0 rgba(0,0,0,0.18);
+            box-shadow: 0 8px 32px 0 rgba(141, 40, 236, 0.2), 0 1.5px 8px 0 rgba(0,0,0,0.18);
             z-index: 1000;
             backdrop-filter: blur(16px);
-            border: 1.5px solid rgba(0,255,136,0.15);
+            border: 1.5px solid rgba(141, 40, 236, 0.5);
             transition: box-shadow 0.3s;
             overflow: visible;
         }
@@ -67,9 +69,9 @@
             height: 44px;
             width: 44px;
             border-radius: 50%;
-            background: #111;
-            border: 2px solid #248857;
-            box-shadow: 0 2px 8px rgba(0,255,136,0.08);
+            background: #222831;
+            border: 2px solid #DFD0B8;
+            box-shadow: 0 2px 8px #94897922;
         }
 
         nav {
@@ -86,16 +88,16 @@
             padding: 0 0 0 8px;
             overflow-x: auto;
             max-width: 100%;
-            scrollbar-width: thin;
-            scrollbar-color: #00ff88 #222;
+            scrollbar-width: thin; 
+            scrollbar-color: #DFD0B8 #393E46;
         }
 
         nav ul::-webkit-scrollbar {
             height: 6px;
         }
 
-        nav ul::-webkit-scrollbar-thumb {
-            background: #00ff88;
+        nav ul::-webkit-scrollbar-thumb { 
+            background: #DFD0B8;
             border-radius: 3px;
         }
 
@@ -104,7 +106,7 @@
         }
 
         nav ul li a {
-            color: #fff;
+            color: #d1c4e9;
             text-decoration: none;
             font-weight: 600;
             padding: 10px 16px;
@@ -117,8 +119,8 @@
 
         nav ul li a:hover,
         nav ul li a:focus {
-            background: linear-gradient(90deg, #00ff88 0%, #00d4ff 100%);
-            color: #111;
+            background: linear-gradient(90deg, #8d28ec 0%, #735cf7 100%);
+            color: #ffffff;
         }
 
         /* Hamburger menu styles */
@@ -131,17 +133,17 @@
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            background: rgba(0,255,136,0.08);
-            border: 1.5px solid rgba(0,255,136,0.15);
-            box-shadow: 0 2px 8px rgba(0,255,136,0.08);
+            background: #DFD0B8;
+            border: 1.5px solid #393E46;
+            box-shadow: 0 2px 8px #94897922;
             transition: background 0.2s;
             margin-right: 18px;
             margin-left: 0;
         }
         .hamburger span {
             height: 3px;
-            width: 22px;
-            background: #00ff88;
+            width: 22px; 
+            background: #393E46;
             margin: 3px 0;
             border-radius: 2px;
             transition: 0.3s;
@@ -149,7 +151,7 @@
 
         /* Hero Section */
         .hero {
-            background: rgba(0, 0, 0, 0.3);
+            
             padding: 150px 0 80px;
             text-align: center;
             position: relative;
@@ -168,7 +170,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at 50% 50%, rgba(0, 255, 136, 0.1) 0%, transparent 70%);
+            
         }
 
         .hero > * {
@@ -179,20 +181,20 @@
         .hero h1 {
             font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 700;
-            color: #fff;
+            
             margin-bottom: 30px;
             line-height: 1.2;
         }
 
         .animated-text {
             font-family: 'Orbitron', sans-serif;
-            background: linear-gradient(45deg, #00ff88, #00d4ff);
+            background: linear-gradient(45deg, #DFD0B8, #948979);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             font-size: 1.8rem;
             margin-bottom: 40px;
-            animation: fadeInSlide 2s ease forwards;
+            animation: fadeInSlide 2s ease forwards; 
             opacity: 0;
         }
 
@@ -210,26 +212,26 @@
         /* Sections */
         .section {
             background: rgba(0, 0, 0, 0.8);
-            padding: 100px 0;
-            color: #ccc;
+            padding: 100px 0; 
+            color: #DFD0B8;
         }
 
         .section:nth-child(even) {
-            background: #111;
+            background: #222831;
         }
 
         .section h2 {
             text-align: center;
             font-size: 2.5rem;
-            color: #fff;
+            color: #DFD0B8;
             margin-bottom: 60px;
         }
 
         .section p {
             font-size: 1.2rem;
-            color: #ccc;
+            color: #DFD0B8;
             margin-bottom: 40px;
-            text-align: center;
+            text-align: center; 
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
@@ -244,28 +246,28 @@
         }
 
         .card {
-            background: linear-gradient(135deg, rgba(2, 121, 56, 0.329), rgba(0, 213, 255, 0.219));
+            background: linear-gradient(135deg, rgba(223, 208, 184, 0.1), rgba(148, 137, 121, 0.1));
             padding: 40px;
             border-radius: 20px;
             text-align: center;
-            border: 1px solid rgba(0, 255, 136, 0.2);
+            border: 1px solid #393E46;
             transition: transform 0.3s, box-shadow 0.3s;
-            color: #fff;
+            color: #DFD0B8;
             font-size: 1.1rem;
             backdrop-filter: blur(10px);
         }
 
         .card:hover {
             transform: translateY(-10px);
-            background: linear-gradient(135deg, rgba(4, 230, 106, 0.493), rgba(2, 192, 230, 0.397));
-            box-shadow: 0 20px 40px rgba(0, 255, 136, 0.2);
+            background: linear-gradient(135deg, rgba(223, 208, 184, 0.2), rgba(148, 137, 121, 0.2));
+            box-shadow: 0 20px 40px rgba(148, 137, 121, 0.2);
         }
 
         /* Buttons */
         .btn, .btn1 {
-            display: inline-block;
-            background: linear-gradient(45deg, #00ff88, #00d4ff);
-            color: #000;
+            display: inline-block; 
+            background: linear-gradient(45deg, #DFD0B8, #948979);
+            color: #222831;
             padding: 15px 30px;
             border-radius: 50px;
             text-decoration: none;
@@ -295,32 +297,32 @@
         }
         #contactForm input,
         #contactForm textarea {
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(0, 255, 136, 0.3);
+            background: rgba(57, 62, 70, 0.5);
+            border: 1px solid #393E46;
             border-radius: 10px;
             padding: 15px;
-            color: #fff;
+            color: #DFD0B8;
             font-family: 'Orbitron', sans-serif;
         }
 
         #contactForm input::placeholder,
         #contactForm textarea::placeholder {
-            color: #ccc;
+            color: #948979;
         }
 
         #contactForm input:focus,
         #contactForm textarea:focus {
             outline: none;
-            border-color: #00ff88;
-            box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+            border-color: #DFD0B8;
+            box-shadow: 0 0 10px rgba(223, 208, 184, 0.2);
         }
 
         #contactForm button {
-            background: linear-gradient(45deg, #00ff88, #00d4ff);
-            color: #000;
+            background: linear-gradient(45deg, #DFD0B8, #948979);
+            color: #222831;
             border: none;
             padding: 15px 30px;
-            border-radius: 50px;
+            border-radius: 50px; 
             font-weight: bold;
             font-family: 'Orbitron', sans-serif;
             cursor: pointer;
@@ -333,14 +335,14 @@
 
         /* Footer */
         .footer {
-            background: #000;
+            background: #393E46;
             padding: 60px 0 30px;
-            border-top: 1px solid #333;
+            border-top: 1px solid #222831;
             text-align: center;
         }
 
         .footer p {
-            color: #666;
+            color: #948979;
             margin-bottom: 20px;
         }
 
@@ -351,13 +353,13 @@
         }
 
         .socials a {
-            color: #ccc;
+            color: #DFD0B8;
             text-decoration: none;
             transition: color 0.3s;
         }
 
-        .socials a:hover {
-            color: #00ff88;
+        .socials a:hover { 
+            color: #948979;
         }
 
         /* Animation delays for cards */
@@ -394,7 +396,7 @@
     object-fit: cover;
     border: none;
     border-radius: 0;
-    filter: drop-shadow(0 0 32px #00ff8877) ;
+    filter: drop-shadow(0 0 32px #94897977) ;
     box-shadow: none;
     aspect-ratio: 3/4;
     min-height: 240px;
@@ -412,8 +414,8 @@
 }
 
 .events-cards .event-card {
-    background: rgba(24, 28, 47, 0.65);
-    border: 1.5px solid #b2f7ef;
+    background: rgba(57, 62, 70, 0.65);
+    border: 1.5px solid #948979;
     border-radius: 18px;
     box-shadow: 0 6px 24px rgba(0,0,0,0.13);
     width: 400px; /* Increased size */
@@ -438,7 +440,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #181c2f;
+    background: #222831;
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
     overflow: hidden;
@@ -454,22 +456,22 @@
 }
 
 .events-cards .event-card .event-title {
-    font-size: 1.08rem;
-    color: #00ffe7;
+    font-size: 1.08rem; 
+    color: #DFD0B8;
     margin: 18px 0 8px 0;
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
 }
 
 .events-cards .event-card .event-date {
-    font-size: 0.98rem;
-    color: #fff;
+    font-size: 0.98rem; 
+    color: #DFD0B8;
     margin-bottom: 10px;
 }
 
 .events-cards .event-card .event-desc {
-    font-size: 0.95rem;
-    color: #ccc;
+    font-size: 0.95rem; 
+    color: #DFD0B8;
     margin: 0 18px 18px 18px;
     flex: 1 1 auto;
     overflow: hidden;
@@ -558,8 +560,8 @@
                 width: 99vw;
                 max-width: 99vw;
                 border-radius: 28px;
-                padding: 0;
-                box-shadow: 0 4px 24px 0 rgba(0,255,136,0.13), 0 1.5px 8px 0 rgba(0,0,0,0.18);
+                padding: 0; 
+                box-shadow: 0 4px 24px 0 #9489792a, 0 1.5px 8px 0 rgba(0,0,0,0.18);
             }
             .navbar .container {
                 padding: 0 8px;
@@ -593,15 +595,15 @@
                 width: 96vw;
                 max-width: 400px;
                 height: auto;
-                flex-direction: column;
-                background: rgba(20,20,20,0.97);
+                flex-direction: column; 
+                background: rgba(34, 40, 49, 0.97);
                 gap: 0;
                 display: none;
                 z-index: 999;
-                transition: top 0.3s;
+                transition: top 0.3s; 
                 padding-top: 24px;
                 border-radius: 0 0 28px 28px;
-                box-shadow: 0 8px 24px rgba(0,255,136,0.10);
+                box-shadow: 0 8px 24px #94897922;
                 overflow-y: auto;
                 max-height: 70vh;
             }
@@ -611,7 +613,7 @@
             nav ul li {
                 width: 100%;
                 text-align: center;
-                border-bottom: 1px solid #222;
+                border-bottom: 1px solid #393E46;
                 padding: 12px 0;
             }
             nav ul li:last-child {
@@ -668,16 +670,16 @@
         width: 100vw;
         padding-bottom: 10px;
         scrollbar-width: thin; /* Show scrollbar on Firefox */
-        scrollbar-color: #00ffe7 #181c2f;
+        scrollbar-color: #DFD0B8 #222831;
         -ms-overflow-style: auto;  /* IE and Edge */
     }
     .team-grid::-webkit-scrollbar {
         display: block; /* Show scrollbar on Chrome, Safari, Opera */
         height: 8px;
-        background: #181c2f;
+        background: #222831;
     }
     .team-grid::-webkit-scrollbar-thumb {
-        background: #00ffe7;
+        background: #DFD0B8;
         border-radius: 8px;
     }
     .team-card {
@@ -720,20 +722,20 @@
 
         /* --- Floating, circular-edged navbar --- */
 .navbar {
-    background: rgba(20, 20, 20, 0.85);
+    background: rgba(57, 62, 70, 0.85);
     padding: 0;
     position: fixed;
     top: 24px;
     left: 50%;
     transform: translateX(-50%);
     width: 96vw;
-    max-width: 700px;
+    max-width: 700px; 
     border-radius: 40px;
-    box-shadow: 0 8px 32px 0 rgba(0,255,136,0.10), 0 1.5px 8px 0 rgba(0,0,0,0.18);
+    box-shadow: 0 8px 32px 0 #9489792a, 0 1.5px 8px 0 rgba(0,0,0,0.18);
     z-index: 1000;
     backdrop-filter: blur(16px);
-    border: 1.5px solid rgba(0,255,136,0.15);
-    transition: box-shadow 0.3s;
+    border: 1.5px solid #393E46;
+    transition: box-shadow 0.3s; 
     overflow: visible;
 }
 .navbar .container {
@@ -751,9 +753,9 @@
     height: 44px;
     width: 44px;
     border-radius: 50%;
-    background: #111;
-    border: 2px solid #00ff88;
-    box-shadow: 0 2px 8px rgba(0,255,136,0.08);
+    background: #222831;
+    border: 2px solid #DFD0B8;
+    box-shadow: 0 2px 8px #94897922;
 }
 nav {
     flex: 1 1 auto;
@@ -768,21 +770,21 @@ nav ul {
     padding: 0 0 0 8px;
     overflow-x: auto;
     max-width: 100%;
-    scrollbar-width: thin;
-    scrollbar-color: #00ff88 #222;
+    scrollbar-width: thin; 
+    scrollbar-color: #DFD0B8 #393E46;
 }
 nav ul::-webkit-scrollbar {
     height: 6px;
 }
 nav ul::-webkit-scrollbar-thumb {
-    background: #00ff88;
+    background: #DFD0B8;
     border-radius: 3px;
 }
 nav ul li {
     flex: 0 0 auto;
 }
 nav ul li a {
-    color: #fff;
+    color: #DFD0B8;
     text-decoration: none;
     font-weight: 600;
     padding: 10px 16px;
@@ -794,8 +796,8 @@ nav ul li a {
 }
 nav ul li a:hover,
 nav ul li a:focus {
-    background: linear-gradient(90deg, #00ff88 0%, #00d4ff 100%);
-    color: #111;
+    background: linear-gradient(90deg, #DFD0B8 0%, #948979 100%);
+    color: #222831;
 }
 .hamburger {
     display: none;
@@ -805,10 +807,10 @@ nav ul li a:focus {
     height: 36px;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    background: rgba(0,255,136,0.08);
-    border: 1.5px solid rgba(0,255,136,0.15);
-    box-shadow: 0 2px 8px rgba(0,255,136,0.08);
+    border-radius: 50%; 
+    background: rgba(223, 208, 184, 0.1);
+    border: 1.5px solid #393E46;
+    box-shadow: 0 2px 8px #94897922;
     transition: background 0.2s;
     margin-right: 18px;
     margin-left: 0;
@@ -824,8 +826,8 @@ nav ul li a:focus {
         width: 99vw;
         max-width: 99vw;
         border-radius: 28px;
-        padding: 0;
-        box-shadow: 0 4px 24px 0 rgba(0,255,136,0.13), 0 1.5px 8px 0 rgba(0,0,0,0.18);
+        padding: 0; 
+        box-shadow: 0 4px 24px 0 #9489792a, 0 1.5px 8px 0 rgba(0,0,0,0.18);
     }
     .navbar .container {
         padding: 0 8px;
@@ -859,15 +861,15 @@ nav ul li a:focus {
         width: 96vw;
         max-width: 400px;
         height: auto;
-        flex-direction: column;
-        background: rgba(20,20,20,0.97);
+        flex-direction: column; 
+        background: rgba(34, 40, 49, 0.97);
         gap: 0;
         display: none;
         z-index: 999;
-        transition: top 0.3s;
+        transition: top 0.3s; 
         padding-top: 24px;
         border-radius: 0 0 28px 28px;
-        box-shadow: 0 8px 24px rgba(0,255,136,0.10);
+        box-shadow: 0 8px 24px #94897922;
         overflow-y: auto;
         max-height: 70vh;
     }
@@ -877,7 +879,7 @@ nav ul li a:focus {
     nav ul li {
         width: 100%;
         text-align: center;
-        border-bottom: 1px solid #222;
+        border-bottom: 1px solid #393E46;
         padding: 12px 0;
     }
     nav ul li:last-child {
@@ -893,9 +895,9 @@ nav ul li a:focus {
 
 /* --- Optional: Add a little floating effect on scroll --- */
 .navbar.scrolled {
-    box-shadow: 0 4px 24px 0 rgba(0,255,136,0.18), 0 1.5px 8px 0 rgba(0,0,0,0.22);
-    background: rgba(20, 20, 20, 0.93);
-    border: 1.5px solid rgba(0,255,136,0.22);
+    box-shadow: 0 4px 24px 0 rgba(141, 40, 236, 0.3), 0 1.5px 8px 0 rgba(0,0,0,0.22);
+    background: linear-gradient(290deg, rgba(141, 40, 236, 0.5), rgba(115, 92, 247, 0.4));
+    border: 1.5px solid rgba(141, 40, 236, 0.6);
 }
 
 @media (min-width: 1025px) {
@@ -914,18 +916,18 @@ nav ul li a:focus {
     width: 100%;
     max-width: 100vw;
     padding-bottom: 16px;
-    scrollbar-width: thin; /* Firefox */
-    scrollbar-color: #00ffe7 #181c2f;
+    scrollbar-width: thin; /* Firefox */ 
+    scrollbar-color: #DFD0B8 #222831;
     justify-content: flex-start;
     margin-top: 2rem;
 }
 
 .team-grid::-webkit-scrollbar {
     height: 12px;
-    background: #181c2f;
+    background: #222831;
 }
 .team-grid::-webkit-scrollbar-thumb {
-    background: #00ffe7;
+    background: #DFD0B8;
     border-radius: 8px;
 }
 
@@ -955,18 +957,18 @@ nav ul li a:focus {
     height: 100%;
     border-radius: 22px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.18);
-    background: rgb(13 77 81 / 49%); 
-    color: #fff;
+    background: rgba(57, 62, 70, 0.49); 
+    color: #DFD0B8;
     position: absolute;
     backface-visibility: hidden;
     transition: transform 0.7s cubic-bezier(.4,2,.6,1);
-    display: flex;
+    display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem 1.2rem;
+    padding: 1.5rem 1.2rem; 
     overflow: hidden;
-    border: 1.5px solid #b2f7ef; /* light border */
+    border: 1.5px solid #948979; /* light border */
 }
 
 .team-card .card-front img {
@@ -975,9 +977,9 @@ nav ul li a:focus {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1.2rem;
-    border: 3px solid #00ffe7;
-    box-shadow: 0 2px 12px #00ffe733;
-    background: #1f2349;
+    border: 3px solid #DFD0B8;
+    box-shadow: 0 2px 12px #dfd0b833;
+    background: #222831;
 }
 
 .team-card .card-front h3 {
@@ -991,7 +993,7 @@ nav ul li a:focus {
 
 .team-card .card-front p {
     font-size: 1.05rem;
-    color: #00ffe7;
+    color: #DFD0B8;
     margin-bottom: 0;
     text-align: center;
     word-break: break-word;
@@ -1004,17 +1006,17 @@ nav ul li a:focus {
 }
 
 .team-card .card-back {
-    background: linear-gradient(135deg, #23264a91 70%, #00ffe562 120%);
+    background: linear-gradient(135deg, rgba(57, 62, 70, 0.57) 70%, rgba(223, 208, 184, 0.38) 120%);
     transform: rotateY(180deg);
     text-align: center;
-    color: #fff;
+    color: #DFD0B8;
     padding-top: 2.2rem;
     padding-bottom: 2.2rem;
 }
 
 .team-card .card-back h4 {
-    margin-bottom: 0.7rem;
-    color: #00ffe7;
+    margin-bottom: 0.7rem; 
+    color: #DFD0B8;
     font-size: 1.1rem;
     letter-spacing: 0.5px;
     text-align: center;
@@ -1055,17 +1057,17 @@ nav ul li a:focus {
         gap: 0.7rem;
         width: 100vw;
         padding-bottom: 10px;
-        scrollbar-width: thin; /* Show scrollbar on Firefox */
-        scrollbar-color: #00ffe7 #181c2f;
+        scrollbar-width: thin; /* Show scrollbar on Firefox */ 
+        scrollbar-color: #DFD0B8 #222831;
         -ms-overflow-style: auto;  /* IE and Edge */
     }
     .team-grid::-webkit-scrollbar {
         display: block; /* Show scrollbar on Chrome, Safari, Opera */
         height: 8px;
-        background: #181c2f;
+        background: #222831;
     }
     .team-grid::-webkit-scrollbar-thumb {
-        background: #00ffe7;
+        background: #DFD0B8;
         border-radius: 8px;
     }
     .team-card {
