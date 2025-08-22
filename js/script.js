@@ -31,7 +31,7 @@ AOS.init();
 
             // Particle system setup
             const particleCount = 800;
-            const particles = [];
+            const particles = []; // Store particle data
             const particleGeometry = new THREE.BufferGeometry();
             const particlePositions = new Float32Array(particleCount * 3);
             const particleColors = new Float32Array(particleCount * 3);
@@ -190,6 +190,6 @@ AOS.init();
             alert('Thank you for contacting us!');
             this.reset();
         });
-        
+
         // Initialize when page loads
         window.addEventListener('load', initAnimation);
