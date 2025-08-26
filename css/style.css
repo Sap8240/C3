@@ -1,3 +1,6 @@
+
+
+/* Base Styles */
 * {
             margin: 0;
             padding: 0;
@@ -9,8 +12,8 @@
             padding: 0;
             height: 100%;
             font-family: 'Orbitron', sans-serif;
-            color: #2ac97e;
-            background: #000;
+            color: #ffffff; /* changed from #2ac97e */
+            background: #0a0a0a;     /* changed from #000 */
             line-height: 1.6;
         }
 
@@ -33,7 +36,7 @@
         /* Header/Navbar */
         .navbar {
             
-            background: rgba(20, 20, 20, 0.85);
+            background: linear-gradient(90deg, #8d28ec 0%, #735cf7 100%);
             padding: 0;
             position: fixed;
             top: 24px;
@@ -42,10 +45,8 @@
             width: 96vw;
             max-width: 700px;
             border-radius: 40px;
-            box-shadow: 0 8px 32px 0 #00ff881a, 0 1.5px 8px 0 rgba(0,0,0,0.18);
-            z-index: 1000;
-            backdrop-filter: blur(16px);
-            border: 1.5px solid rgba(0,255,136,0.15);
+            box-shadow: 0 8px 32px rgba(255, 255, 255, 0.18), 0 1.5px 8px 0 rgba(170, 49, 49, 0.18); /* changed shadow */
+            border: 1.5px solid #b38dc5; /* changed from rgba(0,255,136,0.15) */
             transition: box-shadow 0.3s;
             overflow: visible;
         }
@@ -67,9 +68,9 @@
             height: 44px;
             width: 44px;
             border-radius: 50%;
-            background: #111;
-            border: 2px solid #248857;
-            box-shadow: 0 2px 8px rgba(0,255,136,0.08);
+            background: #1a1a1a; /* changed from #111 */
+            border: 2px solid #735cf7; /* changed from #248857 or #00ff88 */
+            box-shadow: 0 2px 8px #9831f8; /* changed from rgba(0,255,136,0.08) */
         }
 
         nav {
@@ -87,7 +88,7 @@
             overflow-x: auto;
             max-width: 100%;
             scrollbar-width: thin;
-            scrollbar-color: #00ff88 #222;
+            scrollbar-color: #9b67ee #f3e9e9; /* changed from #00ff88 */
         }
 
         nav ul::-webkit-scrollbar {
@@ -95,7 +96,7 @@
         }
 
         nav ul::-webkit-scrollbar-thumb {
-            background: #00ff88;
+            background: #8c00ff; /* changed from #00ff88 */
             border-radius: 3px;
         }
 
@@ -104,7 +105,7 @@
         }
 
         nav ul li a {
-            color: #fff;
+            color: #ffffff; /* changed from #fff */
             text-decoration: none;
             font-weight: 600;
             padding: 10px 16px;
@@ -113,12 +114,6 @@
             font-size: 1.02rem;
             white-space: nowrap;
             display: block;
-        }
-
-        nav ul li a:hover,
-        nav ul li a:focus {
-            background: linear-gradient(90deg, #00ff88 0%, #00d4ff 100%);
-            color: #111;
         }
 
         /* Hamburger menu styles */
@@ -131,9 +126,7 @@
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            background: rgba(0,255,136,0.08);
-            border: 1.5px solid rgba(0,255,136,0.15);
-            box-shadow: 0 2px 8px rgba(0,255,136,0.08);
+           /* changed from rgba(0,255,136,0.08) */
             transition: background 0.2s;
             margin-right: 18px;
             margin-left: 0;
@@ -141,7 +134,7 @@
         .hamburger span {
             height: 3px;
             width: 22px;
-            background: #00ff88;
+            background: #944bf3;
             margin: 3px 0;
             border-radius: 2px;
             transition: 0.3s;
@@ -149,7 +142,7 @@
 
         /* Hero Section */
         .hero {
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.8); /* changed from rgba(0, 0, 0, 0.3) */
             padding: 150px 0 80px;
             text-align: center;
             position: relative;
@@ -168,7 +161,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at 50% 50%, rgba(0, 255, 136, 0.1) 0%, transparent 70%);
+            background: radial-gradient(circle at 50% 50%, #883ae062 0%, transparent 70%); /* changed from rgba(0, 255, 136, 0.1) */
         }
 
         .hero > * {
@@ -179,14 +172,14 @@
         .hero h1 {
             font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 700;
-            color: #fff;
+            color: #ffffff; /* changed from #fff */
             margin-bottom: 30px;
             line-height: 1.2;
         }
 
         .animated-text {
             font-family: 'Orbitron', sans-serif;
-            background: linear-gradient(45deg, #00ff88, #00d4ff);
+            background: linear-gradient(290deg, #8d28ec, #ffffff); /* changed from linear-gradient(45deg, #00ff88, #00d4ff) */
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -209,25 +202,25 @@
 
         /* Sections */
         .section {
-            background: rgba(0, 0, 0, 0.8);
+            background: rgb(26, 26, 26); /* changed from rgba(0, 0, 0, 0.8) */
+            color: #cccccc;   /* changed from #ccc */
             padding: 100px 0;
-            color: #ccc;
         }
 
         .section:nth-child(even) {
-            background: #111;
+            background: #37035a00; /* changed from #111 */
         }
 
         .section h2 {
             text-align: center;
             font-size: 2.5rem;
-            color: #fff;
+            color: linear-gradient(135deg, #7828d391 70%, #05030a62 120%); /* changed from #fff */
             margin-bottom: 60px;
         }
 
         .section p {
             font-size: 1.2rem;
-            color: #ccc;
+            color: #cccccc; /* changed from #ccc */
             margin-bottom: 40px;
             text-align: center;
             max-width: 800px;
@@ -244,28 +237,27 @@
         }
 
         .card {
-            background: linear-gradient(135deg, rgba(2, 121, 56, 0.329), rgba(0, 213, 255, 0.219));
+            background: linear-gradient(135deg, #a56ce691 70%, #05030a62 120%); /* changed from linear-gradient(135deg, rgba(2, 121, 56, 0.329), rgba(0, 213, 255, 0.219)) */
+            border: 1px solid rgba(255, 255, 255, 0.1); /* changed from rgba(0, 255, 136, 0.2) */
+            color: #ffffff; /* changed from #fff */
             padding: 40px;
             border-radius: 20px;
             text-align: center;
-            border: 1px solid rgba(0, 255, 136, 0.2);
             transition: transform 0.3s, box-shadow 0.3s;
-            color: #fff;
-            font-size: 1.1rem;
             backdrop-filter: blur(10px);
         }
 
         .card:hover {
+            background: linear-gradient(135deg, #9e4ae4, #1c1d1d); /* changed from rgba(4, 230, 106, 0.493), rgba(2, 192, 230, 0.397) */
             transform: translateY(-10px);
-            background: linear-gradient(135deg, rgba(4, 230, 106, 0.493), rgba(2, 192, 230, 0.397));
-            box-shadow: 0 20px 40px rgba(0, 255, 136, 0.2);
+            box-shadow: 0 20px 40px #8f52df94; /* changed from rgba(0, 255, 136, 0.2) */
         }
 
         /* Buttons */
         .btn, .btn1 {
             display: inline-block;
-            background: linear-gradient(45deg, #00ff88, #00d4ff);
-            color: #000;
+            background: linear-gradient(290deg, #8d28ec, #ffffff); /* changed from linear-gradient(45deg, #00ff88, #00d4ff) */
+            color: #0a0a0a; /* changed from #000 */
             padding: 15px 30px;
             border-radius: 50px;
             text-decoration: none;
@@ -295,29 +287,28 @@
         }
         #contactForm input,
         #contactForm textarea {
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(0, 255, 136, 0.3);
+            background: rgba(57, 38, 92, 0.445); /* changed from rgba(255, 255, 255, 0.1) */
+            border: 1px solid rgba(255, 255, 255, 0.1); /* changed from rgba(0, 255, 136, 0.3) */
+            color: #ffffff; /* changed from #fff */
             border-radius: 10px;
             padding: 15px;
-            color: #fff;
             font-family: 'Orbitron', sans-serif;
         }
 
         #contactForm input::placeholder,
         #contactForm textarea::placeholder {
-            color: #ccc;
+            color: #d9d2f3; /* changed from #ccc */
         }
 
         #contactForm input:focus,
         #contactForm textarea:focus {
-            outline: none;
-            border-color: #00ff88;
-            box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+            border-color: #9a70e9; /* changed from #00ff88 */
+            box-shadow: 0 0 10px #9448db; /* changed from rgba(0, 255, 136, 0.3) */
         }
 
         #contactForm button {
-            background: linear-gradient(45deg, #00ff88, #00d4ff);
-            color: #000;
+            background: linear-gradient(290deg, #8d28ec, #ffffff); /* changed from linear-gradient(45deg, #00ff88, #00d4ff) */
+            color: #000000; /* changed from #000 */
             border: none;
             padding: 15px 30px;
             border-radius: 50px;
@@ -333,14 +324,14 @@
 
         /* Footer */
         .footer {
-            background: #000;
+            background: #0a0a0a; /* changed from #000 */
             padding: 60px 0 30px;
-            border-top: 1px solid #333;
+            border-top: 1px solid #785e7e8e;
             text-align: center;
         }
 
         .footer p {
-            color: #666;
+            color: #ddc0f0; /* changed from #666 */
             margin-bottom: 20px;
         }
 
@@ -351,13 +342,13 @@
         }
 
         .socials a {
-            color: #ccc;
+            color: #e4ceee; /* changed from #ccc */
             text-decoration: none;
             transition: color 0.3s;
         }
 
         .socials a:hover {
-            color: #00ff88;
+            color: #9c17e9; /* changed from #00ff88 */
         }
 
         /* Animation delays for cards */
@@ -394,7 +385,7 @@
     object-fit: cover;
     border: none;
     border-radius: 0;
-    filter: drop-shadow(0 0 32px #00ff8877) ;
+    filter: drop-shadow(0 0 32px #ac21ec77) ;
     box-shadow: none;
     aspect-ratio: 3/4;
     min-height: 240px;
@@ -412,8 +403,8 @@
 }
 
 .events-cards .event-card {
-    background: rgba(24, 28, 47, 0.65);
-    border: 1.5px solid #b2f7ef;
+    background: rgba(34, 32, 56, 0.603);
+    border: 1.5px solid #b38dc5;
     border-radius: 18px;
     box-shadow: 0 6px 24px rgba(0,0,0,0.13);
     width: 400px; /* Increased size */
@@ -438,7 +429,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #181c2f;
+    background: #8e5ee967;
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
     overflow: hidden;
@@ -455,7 +446,7 @@
 
 .events-cards .event-card .event-title {
     font-size: 1.08rem;
-    color: #00ffe7;
+    color: #b250df; /* changed from #00ffe7 */
     margin: 18px 0 8px 0;
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
@@ -463,13 +454,13 @@
 
 .events-cards .event-card .event-date {
     font-size: 0.98rem;
-    color: #fff;
+    color: #ffffff; /* changed from #fff */
     margin-bottom: 10px;
 }
 
 .events-cards .event-card .event-desc {
     font-size: 0.95rem;
-    color: #ccc;
+    color: #cccccc; /* changed from #ccc */
     margin: 0 18px 18px 18px;
     flex: 1 1 auto;
     overflow: hidden;
@@ -559,7 +550,7 @@
                 max-width: 99vw;
                 border-radius: 28px;
                 padding: 0;
-                box-shadow: 0 4px 24px 0 rgba(0,255,136,0.13), 0 1.5px 8px 0 rgba(0,0,0,0.18);
+                box-shadow: 0 4px 24px 0 rgba(141, 13, 214, 0.959), 0 1.5px 8px 0 rgba(0,0,0,0.18);
             }
             .navbar .container {
                 padding: 0 8px;
@@ -601,7 +592,7 @@
                 transition: top 0.3s;
                 padding-top: 24px;
                 border-radius: 0 0 28px 28px;
-                box-shadow: 0 8px 24px rgba(0,255,136,0.10);
+                box-shadow: 0 8px 24px rgba(139, 19, 219, 0.1);
                 overflow-y: auto;
                 max-height: 70vh;
             }
@@ -611,7 +602,7 @@
             nav ul li {
                 width: 100%;
                 text-align: center;
-                border-bottom: 1px solid #222;
+                border-bottom: 1px solid #6d0fd8;
                 padding: 12px 0;
             }
             nav ul li:last-child {
@@ -668,7 +659,7 @@
         width: 100vw;
         padding-bottom: 10px;
         scrollbar-width: thin; /* Show scrollbar on Firefox */
-        scrollbar-color: #00ffe7 #181c2f;
+        scrollbar-color: #a435c0 #181c2f;
         -ms-overflow-style: auto;  /* IE and Edge */
     }
     .team-grid::-webkit-scrollbar {
@@ -677,7 +668,7 @@
         background: #181c2f;
     }
     .team-grid::-webkit-scrollbar-thumb {
-        background: #00ffe7;
+        background: #9a1cc0;
         border-radius: 8px;
     }
     .team-card {
@@ -867,7 +858,7 @@ nav ul li a:focus {
         transition: top 0.3s;
         padding-top: 24px;
         border-radius: 0 0 28px 28px;
-        box-shadow: 0 8px 24px rgba(0,255,136,0.10);
+        box-shadow: 0 8px 24px rgba(116, 15, 211, 0.1);
         overflow-y: auto;
         max-height: 70vh;
     }
@@ -893,9 +884,9 @@ nav ul li a:focus {
 
 /* --- Optional: Add a little floating effect on scroll --- */
 .navbar.scrolled {
-    box-shadow: 0 4px 24px 0 rgba(0,255,136,0.18), 0 1.5px 8px 0 rgba(0,0,0,0.22);
+    box-shadow: 0 4px 24px 0 rgba(57, 17, 131, 0.18), 0 1.5px 8px 0 rgba(0,0,0,0.22);
     background: rgba(20, 20, 20, 0.93);
-    border: 1.5px solid rgba(0,255,136,0.22);
+    border: 1.5px solid rgba(143, 82, 240, 0.22);
 }
 
 @media (min-width: 1025px) {
@@ -955,8 +946,8 @@ nav ul li a:focus {
     height: 100%;
     border-radius: 22px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.18);
-    background: rgb(13 77 81 / 49%); 
-    color: #fff;
+    background: rgba(13, 77, 81, 0.49); /* changed from rgb(13 77 81 / 49%) */
+    color: #ffffff; /* changed from #fff */
     position: absolute;
     backface-visibility: hidden;
     transition: transform 0.7s cubic-bezier(.4,2,.6,1);
@@ -966,7 +957,7 @@ nav ul li a:focus {
     justify-content: center;
     padding: 1.5rem 1.2rem;
     overflow: hidden;
-    border: 1.5px solid #b2f7ef; /* light border */
+    border: 1.5px solid #b38dc5; /* changed from #b2f7ef */
 }
 
 .team-card .card-front img {
@@ -975,9 +966,9 @@ nav ul li a:focus {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1.2rem;
-    border: 3px solid #00ffe7;
-    box-shadow: 0 2px 12px #00ffe733;
-    background: #1f2349;
+    border: 3px solid #00d9ff; /* changed from #00ffe7 */
+    box-shadow: 0 2px 12px #00d9ff; /* changed from #00ffe733 */
+    background: #1a1a1a; /* changed from #1f2349 */
 }
 
 .team-card .card-front h3 {
@@ -991,7 +982,7 @@ nav ul li a:focus {
 
 .team-card .card-front p {
     font-size: 1.05rem;
-    color: #00ffe7;
+    color: #00d9ff; /* changed from #00ffe7 */
     margin-bottom: 0;
     text-align: center;
     word-break: break-word;
@@ -1004,17 +995,17 @@ nav ul li a:focus {
 }
 
 .team-card .card-back {
-    background: linear-gradient(135deg, #23264a91 70%, #00ffe562 120%);
+    background: linear-gradient(135deg, #23264a91 70%, #00ffe562 120%); /* changed from linear-gradient(135deg, #23264a91 70%, #00ffe562 120%) */
     transform: rotateY(180deg);
     text-align: center;
-    color: #fff;
+    color: #ffffff; /* changed from #fff */
     padding-top: 2.2rem;
     padding-bottom: 2.2rem;
 }
 
 .team-card .card-back h4 {
-    margin-bottom: 0.7rem;
-    color: #00ffe7;
+    color: #00d9ff; /* changed from #00ffe7 */
+    margin-bottom: 0.7rem; /* changed from #00ffe7 */
     font-size: 1.1rem;
     letter-spacing: 0.5px;
     text-align: center;
@@ -1056,7 +1047,7 @@ nav ul li a:focus {
         width: 100vw;
         padding-bottom: 10px;
         scrollbar-width: thin; /* Show scrollbar on Firefox */
-        scrollbar-color: #00ffe7 #181c2f;
+        scrollbar-color: #6b22f3 #000000;
         -ms-overflow-style: auto;  /* IE and Edge */
     }
     .team-grid::-webkit-scrollbar {
@@ -1065,7 +1056,7 @@ nav ul li a:focus {
         background: #181c2f;
     }
     .team-grid::-webkit-scrollbar-thumb {
-        background: #00ffe7;
+        background: #890edb;
         border-radius: 8px;
     }
     .team-card {
